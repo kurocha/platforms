@@ -20,6 +20,7 @@ define_configuration "platforms" do |configuration|
 	# Provides suitable packages for building on linux:
 	host /linux/ do
 		configuration.require "platform-linux"
+		configuration.require "opengl3-headers"
 	end
 
 	# Provides suitable packages for building on windows:
