@@ -15,6 +15,9 @@ define_configuration "platforms" do |configuration|
 	host /darwin/ do
 		configuration.require "platform-darwin-osx"
 		configuration.require "platform-darwin-ios"
+		
+		configuration.require "build-clang"
+		configuration.require "build-darwin"
 	end
 
 	# Provides suitable packages for building on linux:
