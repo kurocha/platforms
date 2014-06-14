@@ -16,14 +16,17 @@ define_configuration "platforms" do |configuration|
 		configuration.require "platform-darwin-osx"
 		configuration.require "platform-darwin-ios"
 		
-		# configuration.require "build-clang"
-		# configuration.require "build-darwin"
+		configuration.require "build-clang"
+		configuration.require "build-darwin"
 	end
 
 	# Provides suitable packages for building on linux:
 	host /linux/ do
 		configuration.require "platform-linux"
 		configuration.require "opengl3-headers"
+		
+		configuration.require "build-clang"
+		configuration.require "build-linux"
 	end
 
 	# Provides suitable packages for building on windows:
