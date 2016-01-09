@@ -33,4 +33,7 @@ define_configuration "platforms" do |configuration|
 	host /windows/ do
 		configuration.require "platform-windows"
 	end
+	
+	# Provides generic operations for copying files, headers, etc:
+	configuration.require "build-files"
 end
