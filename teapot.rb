@@ -12,7 +12,7 @@ define_configuration "platforms" do |configuration|
 	configuration.require "variants"
 
 	# Provides suitable packages for building on darwin:
-	host /darwin/ do
+	host(/darwin/) do
 		configuration.require "platform-darwin-osx"
 		configuration.require "platform-darwin-ios"
 		
@@ -21,7 +21,7 @@ define_configuration "platforms" do |configuration|
 	end
 
 	# Provides suitable packages for building on linux:
-	host /linux/ do
+	host(/linux/) do
 		configuration.require "platform-linux"
 		
 		configuration.require "build-clang"
@@ -29,7 +29,7 @@ define_configuration "platforms" do |configuration|
 	end
 
 	# Provides suitable packages for building on windows:
-	host /windows/ do
+	host(/windows/) do
 		configuration.require "platform-windows"
 	end
 	
