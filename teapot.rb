@@ -35,4 +35,7 @@ define_configuration "platforms" do |configuration|
 	
 	# Provides generic operations for copying files, headers, etc:
 	configuration.require "build-files"
+	
+	configuration.require "executor-unix"
+	configuration.require "executor-lldb"
 end
